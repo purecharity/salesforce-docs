@@ -6,6 +6,7 @@ Label | API Name | Type | Description
 --- | --- | --- | ---
 Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Sensitive) | Internal Pure Charity ID
 Name | `Name` | Text (80) | A combination of Sponsorship Program Name, Sponsorship name and Sponsorship reference separated by dashes (i.e.: "Program - John Doe - SPOREF1234")
+Sponsorship Name | `purecharity__SponsorshipName__c` | Text (255) | Sponsorship name
 Active | `IsActive` | Checkbox | `true`
 Type | `Type` | Picklist | "Sponsorship"
 Status | `Status` | Picklist | "In Progress"

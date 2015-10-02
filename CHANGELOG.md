@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.6
+
+- Added "Sponsorship Name" Field to Campaign
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000IqRa)
+
 ### 1.5
 
 - Added "Anonymous Donation" Field to Opportunity
