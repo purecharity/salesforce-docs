@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.9
+
+- Add SponsorshipSlotsAvailable to Campaign
+- Add SponsorshipSlotsTaken to Campaign
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000Iui9)
+
 ### 1.8
 
 - Add DonorReference to Contacts
