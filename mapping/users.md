@@ -33,3 +33,4 @@ Mobile | `MobilePhone` | Phone | User's mobile phone (if allowed)
 Birthdate | `Birthdate` | Date | User's birthdate (if allowed)
 Mailing Address | `MailingAddress` | Address | User's address (if allowed)
 Account Name | `Account` | Lookup(Account) | User's account
+Donor Reference | `purecharity__DonorReference__c` | Text(255) | User reference code

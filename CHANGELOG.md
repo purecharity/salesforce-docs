@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.8
+
+- Add DonorReference to Contacts
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000Iugr)
+
 ### 1.7
 
 - Added NPSP Dependency
