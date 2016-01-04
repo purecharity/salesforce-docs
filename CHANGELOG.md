@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.10
+
+- Drop NPSP Dependency
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000REfL)
+
 ### 1.9
 
 - Add SponsorshipSlotsAvailable to Campaign
