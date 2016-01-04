@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.7
+
+- Added NPSP Dependency
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000IuXA)
+
 ### 1.6
 
 - Added "Sponsorship Name" Field to Campaign

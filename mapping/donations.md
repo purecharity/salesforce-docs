@@ -20,6 +20,7 @@ Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Se
 Opportunity Name | Name | Text(120) | A combination of Donor and Campaign name separated by a dash (i.e.: "John Doe - Some Fundraiser")
 Primary Campaign Source | Campaign | Lookup(Campaign) | Pure Charity Campaign
 Account Name | Account | Lookup(Account) | Donor Account
+Primary Contact | npsp__Primary_Contact__r | Lookup(Contact) | Donor Contact (Nonprofit Starter Pack)
 Opportunity Record Type | RecordType | Record Type | "Pure Charity Donation"
 Amount | Amount | Currency(16, 2) | Donation amount
 Lead Source | LeadSource | Picklist | "Fundraiser"
