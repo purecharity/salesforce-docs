@@ -17,3 +17,11 @@ Pure Charity URL | `purecharity__Url__c` | URL(255) | Pure Charity's URL address
 City/Country of Impact | `purecharity__Location__c` | Text(255) | Trip location of impact
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Trip Organizer Contact (Admin or Owner)
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Trip Organizer Account (Admin or Owner)
+Trip Category | `purecharity__TripCategory__c` | Picklist | Trip category
+Trip Tags | `purecharity__TripTags__c` | Picklist (Multi-Select) | Trip tags
+Trip Registrations Status | `purecharity__TripRegistrationsStatus__c` | Picklist | Trip registration state "open", "close" or "hide"
+Trip Private Location | `purecharity__TripPrivateLocation__c` | Text(255) | Trip's private location
+Trip Public Country | `purecharity__TripPublicCountry__c` | Text(255) | Trip's country
+Trip Public City | `purecharity__TripPublicCity__c` | Text(255) | Trip's city
+Trip Capacity | `purecharity__TripCapacity__c` | Number(18, 0) | Number of tickets for the trip
+Trip Description | `purecharity__TripDescription__c` | Text Area(255) | Trip's description
