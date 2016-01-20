@@ -34,3 +34,7 @@ Birthdate | `Birthdate` | Date | User's birthdate (if allowed)
 Mailing Address | `MailingAddress` | Address | User's address (if allowed)
 Account Name | `Account` | Lookup(Account) | User's account
 Donor Reference | `purecharity__DonorReference__c` | Text(255) | User reference code
+
+## Mission Passport
+
+Additionally the integration can send data from the standard forms submitted by the trip participants. For more information you can check the [mission passport mapping](mission_passport.md).

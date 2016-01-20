@@ -18,4 +18,5 @@ The integration will take care to send the following information to Salesforce:
 - [Sponsorships](mapping/sponsorships.md)
 - [Trips](mapping/trips.md)
 - [Users](mapping/users.md)
+- [Mission passport](mapping/mission_passport.md)
 - [Giving Circles](mapping/giving_circles.md)
