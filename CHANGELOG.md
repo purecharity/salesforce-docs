@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.11
+
+- Add Mission Passport to Contacts [(ref)](https://github.com/causemetric/salesforce-app/commit/82144c9932242c654b58f0dd2291a4866673c173)
+- Add Registration as Event CampaignMember [(ref)](https://github.com/causemetric/salesforce-app/commit/7ff87a2f450ea961a97755f07c3eaa9c55a22ea5)
+- Add more information to Event Campaigns [(ref)](https://github.com/causemetric/salesforce-app/commit/587b7ea79fad0f8707926126248b5908d2013542)
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000REfQ)
+
 ### 1.10
 
 - Drop NPSP Dependency
