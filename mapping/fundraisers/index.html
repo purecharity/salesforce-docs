@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Fundraisers - Salesforce Pure Charity App Documentation</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Salesforce Pure Charity App Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mapping <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../donations/">Donations</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../direct_donations/">Direct donations</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../donation_categories/">Direct donations to specific categories</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Fundraisers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../sponsorship_programs/">Sponsorships Programs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../sponsorships/">Sponsorships</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../trips/">Trips</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../registrations/">Trip Registrations</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../users/">Users</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../mission_passport/">Mission passport</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../giving_circles/">Giving Circles</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../donation_categories/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../sponsorship_programs/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#fundraisers">Fundraisers</a></li>
+        
+            <li><a href="#types">Types</a></li>
+        
+            <li><a href="#goal-types">Goal Types</a></li>
+        
+            <li><a href="#cause-categories">Cause Categories</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="fundraisers">Fundraisers</h1>
+<p>When a Fundraiser is created in the Pure Charity platform a Campaign will be created in the Salesforce instance as well following the mapping bellow.</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>API Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pure Charity ID</td>
+<td><code>purecharity__Id__c</code></td>
+<td>Text(255) (External ID) (Unique Case Sensitive)</td>
+<td>Internal Pure Charity ID</td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>Name</code></td>
+<td>Text (80)</td>
+<td>Fundraiser name</td>
+</tr>
+<tr>
+<td>Active</td>
+<td><code>IsActive</code></td>
+<td>Checkbox</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>Type</td>
+<td><code>Type</code></td>
+<td>Picklist</td>
+<td>Campaign type on Pure Charity. Check the <a href="#types">Types</a> table below for the available options</td>
+</tr>
+<tr>
+<td>Status</td>
+<td><code>Status</code></td>
+<td>Picklist</td>
+<td>"In Progress"</td>
+</tr>
+<tr>
+<td>Start Date</td>
+<td><code>StartDate</code></td>
+<td>Date</td>
+<td>Fundraiser start date</td>
+</tr>
+<tr>
+<td>End Date</td>
+<td><code>EndDate</code></td>
+<td>Date</td>
+<td>Fundraiser end date</td>
+</tr>
+<tr>
+<td>Expected Revenue</td>
+<td><code>ExpectedRevenue</code></td>
+<td>Currency(18, 0)</td>
+<td>Fundraiser funding goal</td>
+</tr>
+<tr>
+<td>Parent Campaign</td>
+<td><code>Parent</code></td>
+<td>Lookup(Campaign)</td>
+<td>Parent Campaign on Pure Charity</td>
+</tr>
+<tr>
+<td>Campaign Record Type</td>
+<td><code>RecordType</code></td>
+<td>Record Type</td>
+<td>Pure Charity Fundraiser (<code>Pure_Charity_Fundraiser</code>)</td>
+</tr>
+<tr>
+<td>Organization Campaign ID</td>
+<td><code>purecharity__CampaignId__c</code></td>
+<td>Text(255)</td>
+<td>Fundraiser Campaign ID</td>
+</tr>
+<tr>
+<td>Organization Appeal ID</td>
+<td><code>purecharity__AppealId__c</code></td>
+<td>Text(255)</td>
+<td>Fundraiser Appeal ID</td>
+</tr>
+<tr>
+<td>Lives Impacted</td>
+<td><code>purecharity__LivesImpacted__c</code></td>
+<td>Number(18, 0)</td>
+<td>Number of lives Impacted by the Fundraiser</td>
+</tr>
+<tr>
+<td>Region of Impact</td>
+<td><code>purecharity__Region__c</code></td>
+<td>Text(255)</td>
+<td>Fundraiser region of impact</td>
+</tr>
+<tr>
+<td>Pure Charity URL</td>
+<td><code>purecharity__Url__c</code></td>
+<td>URL(255)</td>
+<td>Pure Charity's URL address to the Fundraiser</td>
+</tr>
+<tr>
+<td>City/Country of Impact</td>
+<td><code>purecharity__Location__c</code></td>
+<td>Text(255)</td>
+<td>Fundraiser location of impact</td>
+</tr>
+<tr>
+<td>Fundraiser Goal</td>
+<td><code>purecharity__FundraiserGoal__c</code></td>
+<td>Picklist</td>
+<td>Campaign Goal type on Pure Charity. Check the <a href="#goal-types">Goal Types</a> table below for the available options</td>
+</tr>
+<tr>
+<td>Cause Category</td>
+<td><code>purecharity__CauseCategory__c</code></td>
+<td>Picklist</td>
+<td>Campaign Category on Pure Charity. Check the <a href="#cause-categories">Cause Categories</a> table below for the available options</td>
+</tr>
+<tr>
+<td>Trip/Fund ID</td>
+<td><code>purecharity__TripId__c</code></td>
+<td>Text(255)</td>
+<td>Fundraiser Trip/Fund ID</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><code>purecharity__Contact__r</code></td>
+<td>Lookup(Contact)</td>
+<td>Fundraiser Organizer Contact (Admin or Owner)</td>
+</tr>
+<tr>
+<td>Organizer</td>
+<td><code>purecharity__Organizer__r</code></td>
+<td>Lookup(Account)</td>
+<td>Fundraiser Organizer Account (Admin or Owner)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Fundraiser</td>
+<td>For Pure Charity's Race or Sport Activity Fundraisers</td>
+</tr>
+<tr>
+<td>Adoption Fundraiser</td>
+<td>For Pure Charity's Adoption Fundraisers</td>
+</tr>
+<tr>
+<td>Birthday Fundraiser</td>
+<td>For Pure Charity's Birthday Fundraisers</td>
+</tr>
+<tr>
+<td>Get Creative Fundraiser</td>
+<td>For Pure Charity's "Your fundraising idea" Fundraisers</td>
+</tr>
+<tr>
+<td>Group Fundraiser</td>
+<td>For Pure Charity's "With a Group" Fundraisers</td>
+</tr>
+<tr>
+<td>Holiday Fundraiser</td>
+<td>For Pure Charity's Holiday Fundraisers</td>
+</tr>
+<tr>
+<td>Mission Fundraiser</td>
+<td>For Pure Charity's Mission Trip Fundraisers</td>
+</tr>
+<tr>
+<td>Occasion Fundraiser</td>
+<td>For Pure Charity's Special Occasion Fundraisers</td>
+</tr>
+</tbody>
+</table>
+<h2 id="goal-types">Goal Types</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-time</td>
+</tr>
+<tr>
+<td>Monthly Recurring</td>
+</tr>
+<tr>
+<td>One-time &amp; Monthly Recurring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cause-categories">Cause Categories</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Water</td>
+</tr>
+<tr>
+<td>Freedom</td>
+</tr>
+<tr>
+<td>Food</td>
+</tr>
+<tr>
+<td>Health</td>
+</tr>
+<tr>
+<td>Relief</td>
+</tr>
+<tr>
+<td>Opportunity</td>
+</tr>
+</tbody>
+</table></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
