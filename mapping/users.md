@@ -26,7 +26,7 @@ Label | API Name | Type | Description
 Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Sensitive) | Internal Pure Charity ID
 First Name | `FirstName` | Text(40) | User's first name
 Last Name | `LastName` | Text(80) | User's last name
-Title | `Title` | Text(128) | User's title (if allowed)
+Salutation | `Salutation` | Picklist | User's salutation (if allowed)
 Email | `Email` | Email | User's email (if allowed)
 Phone | `Phone` | Phone | User's phone (if allowed)
 Mobile | `MobilePhone` | Phone | User's mobile phone (if allowed)
