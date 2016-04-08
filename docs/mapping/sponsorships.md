@@ -18,5 +18,5 @@ Pure Charity URL | `purecharity__Url__c` | URL(255) | Pure Charity's URL address
 City/Country of Impact | `purecharity__Location__c` | Text(255) | Sponsorship location of impact
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Sponsorship Organizer Contact (Admin or Owner)
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Sponsorship Organizer Account (Admin or Owner)
-Sponsorship Slots Available | purecharity__SponsorshipSlotsAvailable__c | Number(18, 0) | Number of available slots
-Sponsorship Slots Taken | purecharity__SponsorshipSlotsTaken__c | Number(18, 0) | Number of taken slots
+Sponsorship Slots Available | `purecharity__SponsorshipSlotsAvailable__c` | Number(18, 0) | Number of available slots
+Sponsorship Slots Taken | `purecharity__SponsorshipSlotsTaken__c` | Number(18, 0) | Number of taken slots
