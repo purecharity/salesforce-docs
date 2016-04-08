@@ -12,23 +12,22 @@ __Personal Information__
 
 API Name | Type | Description
 --- | --- | ---
-`purecharity_pi_FirstName__c` | Text | First Name field
-`purecharity_pi_MiddleName__c` | Text | Middle Name field
-`purecharity_pi_LastName__c` | Text | Last Name field
+`FirstName` | Text | First Name field
+`MiddleName` | Text | Middle Name field
+`LastName` | Text | Last Name field
 `purecharity_pi_PreferredName__c` | Text | Preferred Name field
-`purecharity_pi_Email__c` | Text | Email field
-`purecharity_pi_HomePhone__c` | Text / Phone | Home Phone field
-`purecharity_pi_MobilePhone__c` | Text / Phone | Mobile Phone field
-`purecharity_pi_BirthDate__c` | Date | Birth Date field
-`purecharity_pi_City__c` | Text | City field
-`purecharity_pi_Country__c` | Text / Picklist | Country field
-`purecharity_pi_Zip__c` | Text | Zip field
-`purecharity_pi_State__c` | Text / Picklist | State field
-`purecharity_pi_Address1__c` | Text | Street Address field
-`purecharity_pi_Address2__c` | Text | Apt / Suite field
+`Email` | Text | Email field
+`Phone` | Text / Phone | Home Phone field
+`MobilePhone` | Text / Phone | Mobile Phone field
+`Birthdate` | Date | Birthdate field
+`MailingCity` | Text | City field
+`MailingCountry` | Text / Picklist | Country field
+`MailingPostalCode` | Text | Zip field
+`MailingState` | Text / Picklist | State field
+`MailingStreet` | Text | Street Address + Apt/Suite field
 `purecharity_pi_Gender__c` | Text / Picklist | Gender field
-`purecharity_pi_Suffix__c` | Text / Picklist | Suffix field
-`purecharity_pi_Title__c` | Text / Picklist | Tittle field
+`Suffix` | Text / Picklist | Suffix field
+`Salutation` | Text / Picklist | Tittle field
 `purecharity_pi_ShirtSize__c` | Text / Picklist | Shirt Size field
 `purecharity_pi_TripSource__c` | Text / Picklist | Trip Source field
 
