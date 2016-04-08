@@ -10,6 +10,7 @@ Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Se
 Contact | `Contact` | Lookup(Contact) | Pure Charity User Contact
 Campaign | `Campaign` | Lookup(Campaign) | Pure Charity Campaign
 Status | `Status` | Picklist | "Trip Leader" or "Participant"
+Registration Status | `purecharity__RegistrationStatus__c` | Picklist | "Registered" or "Not Registered"
 Registration Date | `purecharity__RegistrationDate__c` | Date | Registration date
 Business Affiliation Completed | `purecharity__BusinessAffiliationCompleted__c` | Checkbox | Checked if the Business Affiliation todo is approved and completed.
 Church Affiliation Completed | `purecharity__ChurchAffiliationCompleted__c` | Checkbox | Checked if the Church Affiliation todo is approved and completed.
