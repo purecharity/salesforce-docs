@@ -1,5 +1,20 @@
 # Changelog
 
+### 1.14
+
+- Add RegistrationStatus to Trip Campaigns
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000RG1T)
+
+### 1.13
+
+- Add About field (Long description) to Event Camapign
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000RG1O)
+
+### 1.12
+
+- Internal fixes to work on sandbox accounts
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000REvv)
+
 ### 1.11
 
 - Add Mission Passport to Contacts [(ref)](https://github.com/causemetric/salesforce-app/commit/82144c9932242c654b58f0dd2291a4866673c173)
