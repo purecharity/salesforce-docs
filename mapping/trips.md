@@ -25,3 +25,4 @@ Trip Public Country | `purecharity__TripPublicCountry__c` | Text(255) | Trip's c
 Trip Public City | `purecharity__TripPublicCity__c` | Text(255) | Trip's city
 Trip Capacity | `purecharity__TripCapacity__c` | Number(18, 0) | Number of tickets for the trip
 Trip Description | `purecharity__TripDescription__c` | Text Area(255) | Trip's description
+Trip Long Description | `purecharity__TripLongDescription__c` | Text Area(255) | Trip's long description (About)
