@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.15
+
+- Add recurring donation status to CampaignMember
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000RG27)
+
 ### 1.14
 
 - Add RegistrationStatus to Trip Campaigns
