@@ -1,6 +1,7 @@
 site_name: Salesforce Pure Charity App Documentation
 pages:
 - Home: index.md
+- Changelog: changelog.md
 - Mapping:
   - Donations: mapping/donations.md
   - Direct donations: mapping/direct_donations.md

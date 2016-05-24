@@ -4,7 +4,7 @@ This repository contains some relevant information on how the Pure Charity App f
 
 The latest version available can always be found [here](http://salesforceinstall.purecharity.com).
 
-You can also all take a look at the [Changelog file](https://github.com/purecharity/salesforce-docs/blob/master/CHANGELOG.md) and see what changed from version to version.
+You can also all take a look at the [Changelog file](changelog.md) and see what changed from version to version.
 
 ## Mapping
 
