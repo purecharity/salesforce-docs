@@ -180,6 +180,7 @@
 <p>When a donation is made in the Pure Charity platform an Opportunity and a Campaign Member record will be created in the Salesforce instance following the mapping bellow.</p>
 <h2 id="campaign-member">Campaign Member</h2>
 <p>The Campaign Member record will only be created at the first donation from the user to the campaign. The Contact will always refer to a Pure Charity user, so if the donation was made by a Giving Circle then the organizer admin will be the Contact.</p>
+<p>For recurring donations the <code>purecharity__RecurringDonationStatus__c</code> field is going to be updated whenever its status change in Pure Charity. So, if the donor pause/cancel/resume the recurring donation then the CampaignMember record will be updated to reflect the new status.</p>
 <table>
 <thead>
 <tr>
@@ -207,6 +208,12 @@
 <td><code>Campaign</code></td>
 <td>Lookup(Campaign)</td>
 <td>Pure Charity Campaign</td>
+</tr>
+<tr>
+<td>Recurring Donation Status</td>
+<td><code>purecharity__RecurringDonationStatus__c</code></td>
+<td>Picklist</td>
+<td>Recurring donations current status ("active", "inactive", "cancelled" or "errored")</td>
 </tr>
 </tbody>
 </table>
