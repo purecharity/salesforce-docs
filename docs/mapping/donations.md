@@ -6,11 +6,14 @@ When a donation is made in the Pure Charity platform an Opportunity and a Campai
 
 The Campaign Member record will only be created at the first donation from the user to the campaign. The Contact will always refer to a Pure Charity user, so if the donation was made by a Giving Circle then the organizer admin will be the Contact.
 
+For recurring donations the `purecharity__RecurringDonationStatus__c` field is going to be updated whenever its status change in Pure Charity. So, if the donor pause/cancel/resume the recurring donation then the CampaignMember record will be updated to reflect the new status.
+
 Label | API Name | Type | Description
 --- | --- | --- | ---
 Status | `Status` | Picklist | "Backer"
 Contact | `Contact` | Lookup(Contact) | Pure Charity User Contact
 Campaign | `Campaign` | Lookup(Campaign) | Pure Charity Campaign
+Recurring Donation Status | `purecharity__RecurringDonationStatus__c` | Picklist | Recurring donations current status ("active", "inactive", "cancelled" or "errored"). Empty for One time donations.
 
 ## Opportunity
 
