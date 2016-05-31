@@ -32,3 +32,4 @@ Close Date | `CloseDate` | Date | Donation date
 Probability (%) | `Probability` | Percent(3, 0) | "100%"
 Type | `Type` | Picklist | "Recurring" for recurring donations and "One Time" for single donation
 Anonymous Donation | `purecharity__AnonymousDonation__c` | Checkbox | `true` when donor decided to do not share his donation amount, email, and location with the fundraiser organizer
+Donation Notes | `purecharity__Notes__c` | Long Text Area(32768) | Notes added by donor in the checkout screen

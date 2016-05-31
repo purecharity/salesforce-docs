@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.16
+
+- Add donation notes to Opportunity
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000VRWZ)
+
 ### 1.15
 
 - Add recurring donation status to CampaignMember
