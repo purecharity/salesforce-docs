@@ -37,6 +37,20 @@ API Name | Type | Description
 --- | --- | ---
 `purecharity_fi_MaritalStatus__c` | Text / Picklist | Marital Status field
 
+__Business Affiliation__
+
+API Name | Type | Description
+--- | --- | ---
+`purecharity_ca_BusinessName__c` | Text | Business Name field
+`purecharity_ca_BusinessAddress1__c` | Text | Business Address 1 field
+`purecharity_ca_BusinessAddress2__c` | Text | Business Address 2 field
+`purecharity_ca_BusinessCity__c` | Text | Business City field
+`purecharity_ca_BusinessState__c` | Text / Picklist | Business State field
+`purecharity_ca_BusinessZip__c` | Text | Business Zip field
+`purecharity_ca_BusinessPosition__c` | Text | Business Position field
+`purecharity_ca_BusinessProfession__c` | Text | Business Profession field
+`purecharity_ca_BusinessPhone__c` | Text / Phone | Business Phone field
+
 __Church Affiliation__
 
 API Name | Type | Description
