@@ -15,6 +15,7 @@ Campaign Record Type | `RecordType` | Record Type | Pure Charity Trip (`Pure_Cha
 Region of Impact | `purecharity__Region__c` | Text(255) | Trip region of impact
 Pure Charity URL | `purecharity__Url__c` | URL(255) | Pure Charity's URL address to the Trip
 City/Country of Impact | `purecharity__Location__c` | Text(255) | Trip location of impact
+Pure Charity Reference | `purecharity__Reference__c` | Text(255) | Trip Reference Code
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Trip Organizer Contact (Admin or Owner)
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Trip Organizer Account (Admin or Owner)
 Trip Category | `purecharity__TripCategory__c` | Picklist | Trip category

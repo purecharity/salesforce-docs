@@ -23,6 +23,7 @@ City/Country of Impact | `purecharity__Location__c` | Text(255) | Fundraiser loc
 Fundraiser Goal | `purecharity__FundraiserGoal__c` | Picklist | Campaign Goal type on Pure Charity. Check the [Goal Types](#goal-types) table below for the available options
 Cause Category | `purecharity__CauseCategory__c` | Picklist | Campaign Category on Pure Charity. Check the [Cause Categories](#cause-categories) table below for the available options
 Trip/Fund ID | `purecharity__TripId__c` | Text(255) | Fundraiser Trip/Fund ID
+Pure Charity Reference | `purecharity__Reference__c` | Text(255) | Fundraiser Reference Code
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Fundraiser Organizer Contact (Admin or Owner)
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Fundraiser Organizer Account (Admin or Owner)
 

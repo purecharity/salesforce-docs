@@ -12,5 +12,6 @@ Status | `Status` | Picklist | "In Progress"
 Parent Campaign | `Parent` | Lookup(Campaign) | Field Partner's Direct Donation Campaign
 Campaign Record Type | `RecordType` | Record Type | Pure Charity Direct Donation (`Pure_Charity_Direct_Donation`)
 Pure Charity URL | `purecharity__Url__c` | URL(255) | Pure Charity URL address to the Field Partner profile
+Pure Charity Reference | `purecharity__Reference__c` | Text(255) | Field Partner Reference Code
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Field Partner Organizer Contact
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Field Partner Organizer Account

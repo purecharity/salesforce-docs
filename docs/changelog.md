@@ -1,5 +1,13 @@
 # Changelog
 
+### 1.17
+
+- Add Registration Type to CampaignMember
+- Include Pastor information in Church Mission Passport Form
+- Add 'Refund' type to Pure Charity Donations
+- Add Pure Charity Reference field to Campaign
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000VRcw)
+
 ### 1.16
 
 - Add donation notes to Opportunity

@@ -47,6 +47,10 @@ API Name | Type | Description
 `purecharity_ca_ChurchState__c` | Text / Picklist | Church State field
 `purecharity_ca_ChurchZip__c` | Text | Church Zip field
 `purecharity_ca_ChurchPhone__c` | Text / Phone | Church Phone field
+`purecharity_ca_PastorFirstName__c` | Text | Church's Pastor First Name field
+`purecharity_ca_PastorLastName__c` | Text | Church's Pastor Last Name field
+`purecharity_ca_PastorPhone__c` | Text / Phone | Church's Pastor Phone field
+`purecharity_ca_PastorEmail__c` | Text | Church's Pastor Email field
 
 __Emergency Contact__
 

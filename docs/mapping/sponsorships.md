@@ -16,6 +16,7 @@ Campaign Record Type | `RecordType` | Record Type | Pure Charity Sponsorship (`P
 Region of Impact | `purecharity__Region__c` | Text(255) | Sponsorship region of impact
 Pure Charity URL | `purecharity__Url__c` | URL(255) | Pure Charity's URL address to the Sponsorship
 City/Country of Impact | `purecharity__Location__c` | Text(255) | Sponsorship location of impact
+Pure Charity Reference | `purecharity__Reference__c` | Text(255) | Sponsorship Reference Code
 Contact | `purecharity__Contact__r` | Lookup(Contact) | Sponsorship Organizer Contact (Admin or Owner)
 Organizer | `purecharity__Organizer__r` | Lookup(Account) | Sponsorship Organizer Account (Admin or Owner)
 Sponsorship Slots Available | `purecharity__SponsorshipSlotsAvailable__c` | Number(18, 0) | Number of available slots
