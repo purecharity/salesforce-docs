@@ -2,7 +2,7 @@
 
 Mission passport information is sent to Salesforce when any of the participant's requirement is approved and completed inside Pure Charity platform. All mission passport fields are sent to the participant's Contact.
 
-Currently the integration sends only data for the following Standard Forms: Personal Information, Church Affiliation, Family Information, Emergency Contact, Medical, Passport and Skills.
+Currently the integration sends only data for the following Standard Forms: Personal Information, Business Affiliation, Church Affiliation, Family Information, Emergency Contact, Medical, Passport and Skills.
 
 **NOTE: Mission passport fields are not added by the Pure Charity App, they are all optional and should be added to the `Contact` object following the mapping bellow.**
 
