@@ -22,6 +22,8 @@ Trip Category | `purecharity__TripCategory__c` | Picklist | Trip category
 Trip Tags | `purecharity__TripTags__c` | Picklist (Multi-Select) | Trip tags
 Trip Registrations Status | `purecharity__TripRegistrationsStatus__c` | Picklist | Trip registration state "open", "close" or "hide"
 Trip Private Location | `purecharity__TripPrivateLocation__c` | Text(255) | Trip's private location
+Trip Private Country | `purecharity__TripPrivateCountry__c` | Text(255) | Trip's private country
+Trip Private City | `purecharity__TripPrivateCity__c` | Text(255) | Trip's private city
 Trip Public Country | `purecharity__TripPublicCountry__c` | Text(255) | Trip's country
 Trip Public City | `purecharity__TripPublicCity__c` | Text(255) | Trip's city
 Trip Capacity | `purecharity__TripCapacity__c` | Number(18, 0) | Number of tickets for the trip

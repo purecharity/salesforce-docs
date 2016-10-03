@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.18
+
+- Add TripPrivateCountry and TripPrivateCity to Campaign
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006G9n)
+
 ### 1.17
 
 - Add Registration Type to CampaignMember
