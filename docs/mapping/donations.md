@@ -34,4 +34,5 @@ Type | `Type` | Picklist | "Recurring" for recurring donations; "One Time" for s
 Anonymous Donation | `purecharity__AnonymousDonation__c` | Checkbox | `true` when donor decided to do not share his donation amount, email, and location with the fundraiser organizer
 Donation Notes | `purecharity__Notes__c` | Long Text Area(32768) | Notes added by donor in the checkout screen
 Payment Method | `purecharity__PaymentMethod__c` | Text(255) | Type of payment used for Donation ("credit card", "ach", "check", "stock")
+Check Serial | `purecharity__CheckSerial__c` | Text(255) | Check serial number if donation was made by check
 

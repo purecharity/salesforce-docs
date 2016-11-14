@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.20
+
+- Add CheckSerial to Opportunity
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006GIX)
+
 ### 1.19
 
 - Add PaymentMethod to Opportunity
