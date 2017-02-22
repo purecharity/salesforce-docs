@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.21
+
+- Add Promotional Adjustments and Transfers
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006GTa)
+
 ### 1.20
 
 - Add CheckSerial to Opportunity
