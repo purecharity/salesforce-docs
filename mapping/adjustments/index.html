@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Salesforce Pure Charity App Documentation</title>
+	<title>Adjustments - Salesforce Pure Charity App Documentation</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Salesforce Pure Charity App Documentation</a>
+            <a class="navbar-brand" href="../..">Salesforce Pure Charity App Documentation</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -54,90 +54,90 @@
                 
                 
                     <li >
-                        <a href=".">Home</a>
+                        <a href="../..">Home</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="changelog/">Changelog</a>
+                        <a href="../../changelog/">Changelog</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mapping <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="mapping/donations/">Donations</a>
+    <a href="../donations/">Donations</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/direct_donations/">Direct donations</a>
+    <a href="../direct_donations/">Direct donations</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/donation_categories/">Direct donations to specific categories</a>
+    <a href="../donation_categories/">Direct donations to specific categories</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/fundraisers/">Fundraisers</a>
+    <a href="../fundraisers/">Fundraisers</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/sponsorship_programs/">Sponsorships Programs</a>
+    <a href="../sponsorship_programs/">Sponsorships Programs</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/sponsorships/">Sponsorships</a>
+    <a href="../sponsorships/">Sponsorships</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/trips/">Trips</a>
+    <a href="../trips/">Trips</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/registrations/">Trip Registrations</a>
+    <a href="../registrations/">Trip Registrations</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/users/">Users</a>
+    <a href="../users/">Users</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/mission_passport/">Mission passport</a>
+    <a href="../mission_passport/">Mission passport</a>
 </li>
 
                         
                             
 <li >
-    <a href="mapping/giving_circles/">Giving Circles</a>
+    <a href="../giving_circles/">Giving Circles</a>
 </li>
 
                         
                             
-<li >
-    <a href="mapping/adjustments/">Adjustments</a>
+<li class="active">
+    <a href="./">Adjustments</a>
 </li>
 
                         
@@ -155,8 +155,8 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../giving_circles/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -174,15 +174,106 @@
 
         <div class="container">
             
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#adjustments-promotional-transfers">Adjustments (Promotional Transfers)</a></li>
+        
+            <li><a href="#opportunity">Opportunity</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="adjustments-promotional-transfers">Adjustments (Promotional Transfers)</h1>
+<p>When a promotional adjustment or transfer is made in the Pure Charity platform an Opportunity record will be created in the Salesforce instance following the mapping bellow.</p>
+<h2 id="opportunity">Opportunity</h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>API Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pure Charity ID</td>
+<td><code>purecharity__Id__c</code></td>
+<td>Text(255) (External ID) (Unique Case Sensitive)</td>
+<td>Internal Pure Charity ID</td>
+</tr>
+<tr>
+<td>Opportunity Name</td>
+<td><code>Name</code></td>
+<td>Text(120)</td>
+<td>A combination of Source Campaign (if provided), Amount, Destination Campaign, Type and Close Date separated by a dash (i.e.: "Some Fundraiser - 300.00 - Another Fundraiser - Promotional Transfer - 2017-02-03")</td>
+</tr>
+<tr>
+<td>Primary Campaign Source</td>
+<td><code>Campaign</code></td>
+<td>Lookup(Campaign)</td>
+<td>Destination Campaign</td>
+</tr>
+<tr>
+<td>Opportunity Record Type</td>
+<td><code>RecordType</code></td>
+<td>Record Type</td>
+<td>"Pure Charity Adjustment"</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td><code>Amount</code></td>
+<td>Currency(16, 2)</td>
+<td>Adjustment amount</td>
+</tr>
+<tr>
+<td>Stage</td>
+<td><code>StageName</code></td>
+<td>Picklist</td>
+<td>"Closed Won"</td>
+</tr>
+<tr>
+<td>Close Date</td>
+<td><code>CloseDate</code></td>
+<td>Date</td>
+<td>Adjustment date</td>
+</tr>
+<tr>
+<td>Probability (%)</td>
+<td><code>Probability</code></td>
+<td>Percent(3, 0)</td>
+<td>"100%"</td>
+</tr>
+<tr>
+<td>Description</td>
+<td><code>Description</code></td>
+<td>Long Text Area(32000)</td>
+<td>Adjustment description</td>
+</tr>
+<tr>
+<td>Type</td>
+<td><code>Type</code></td>
+<td>Picklist</td>
+<td>"Promotional Adjustment" or "Promotional Transfer"</td>
+</tr>
+<tr>
+<td>Transfer Source</td>
+<td><code>purecharity__TransferSource__c</code></td>
+<td>Lookup(Campaign)</td>
+<td>Source transfer campaign (if provided)</td>
+</tr>
+<tr>
+<td>Donation Notes</td>
+<td><code>purecharity__Notes__c</code></td>
+<td>Long Text Area(32768)</td>
+<td>Field Partner notes</td>
+</tr>
+</tbody>
+</table></div>
+            
         </div>
 
         <footer class="col-md-12">
@@ -191,12 +282,12 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
