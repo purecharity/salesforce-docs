@@ -8,7 +8,8 @@ Label | API Name | Type | Description
 --- | --- | --- | ---
 Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Sensitive) | Internal Pure Charity ID
 Contact | `Contact` | Lookup(Contact) | Pure Charity User Contact
-Campaign | `Campaign` | Lookup(Campaign) | Pure Charity Campaign
+Campaign | `Campaign` | Lookup(Campaign) | Pure Charity Trip Campaign
+Registration Campaign | `purecharity__RegistrationCampaign__r` | Lookup(Campaign) | Pure Charity Trip Registration Campaign
 Registration Type | `purecharity__RegistrationType__c` | Picklist | "Trip Leader" or "Participant"
 Registration Status | `purecharity__RegistrationStatus__c` | Picklist | "Registered" or "Not Registered"
 Registration Date | `purecharity__RegistrationDate__c` | Date | Registration date

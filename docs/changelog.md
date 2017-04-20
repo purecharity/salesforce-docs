@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.22
+
+- Add Registration Campaign to CampaignMember
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006H7f)
+
 ### 1.21
 
 - Add Promotional Adjustments and Transfers
