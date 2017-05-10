@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.23
+
+- Add Check Memo to Opportunity
+- [direct link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006HNA)
+
+
 ### 1.22
 
 - Add Registration Campaign to CampaignMember
