@@ -8,7 +8,7 @@ Pure Charity ID | `purecharity__Id__c` | Text(255) (External ID) (Unique Case Se
 Name | `Name` | Text (80) | Fundraiser name
 Active | `IsActive` | Checkbox | `true`
 Type | `Type` | Picklist | Campaign type on Pure Charity. Check the [Types](#types) table below for the available options
-Status | `Status` | Picklist | "In Progress"
+Status | `Status` | Picklist | Fundraiser status. Check the [Status mapping](#status-mapping) table below
 Start Date | `StartDate` | Date | Fundraiser start date
 End Date | `EndDate` | Date | Fundraiser end date
 Expected Revenue | `ExpectedRevenue` | Currency(18, 0) | Fundraiser funding goal
@@ -59,3 +59,12 @@ Occasion Fundraiser | For Pure Charity's Special Occasion Fundraisers
 | Health |
 | Relief |
 | Opportunity |
+
+## Status Mapping
+Pure Charity | Salesforce
+--- | ---
+pending | Planned
+published | In Progress
+ended | Completed
+suspended | Aborted
+deleted | Aborted
