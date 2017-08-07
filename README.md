@@ -2,7 +2,7 @@
 
 This is the documentation repository for the Pure Charity App for Salesforce.
 
-The latest version available can always be found [here](http://salesforceinstall.purecharity.com).
+The latest version available can always be found [here](http://salesforceinstall.purecharity.com) or you can retrieve the latest file directly using:  https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000006H7f 
 
 You can also all take a look at the [Changelog file](CHANGELOG.md) and see what changed from version to version.
 
