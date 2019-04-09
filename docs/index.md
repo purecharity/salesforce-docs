@@ -9,9 +9,9 @@ You can also all take a look at the [Changelog file](changelog.md) and see what 
 ## Installation
 In order to integrate Pure Charity with your Salesforce instance, please follow these steps:
 
-1. Integration user must be a system admin with "Marketing User" activated and must have permissions to create and edit donations.
+1. Make sure that the Nonprofit Starter Pack is installed in your Salesforce account [NPSP3 Installer page](https://mrbelvedere.salesforcefoundation.org/mpinstaller/npsp).
 
-2. Make sure that the Nonprofit Starter Pack is installed in your Salesforce account [NPSP3 Installer page](https://mrbelvedere.salesforcefoundation.org/mpinstaller/npsp).
+2. Create or designate an Integration user in your Salesforce instance. This user must be a system admin with "Marketing User" activated and must have permissions to create and edit donations.
 
 3. Install the Pure Charity App into your Salesforce account [Salesforce.com install page](http://salesforceinstall.purecharity.com).
 
